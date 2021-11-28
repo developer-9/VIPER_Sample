@@ -27,5 +27,6 @@ final class AppRouter {
 
 extension AppRouter: AppWireframe {
     func showRepositorySearchResultView() {
+        let searchResultView = searchresult
     }
 }

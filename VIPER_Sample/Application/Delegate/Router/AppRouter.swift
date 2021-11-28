@@ -16,5 +16,16 @@ final class AppRouter {
     
     init(window: UIWindow) {
         self.window = window
-    }    
+    }
+    
+    static func assembleModules(window: UIWindow) -> AppPresentation {
+        let router = AppRouter(window: window)
+        let presenter = AppPresenter(router: router)
+        return presenter
+    }
+}
+
+extension AppRouter: AppWireframe {
+    func showRepositorySearchResultView() {
+    }
 }

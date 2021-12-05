@@ -8,7 +8,7 @@
 import UIKit
 
 protocol RepositorySearchResultWireframe: AnyObject {
-    func showRepositoryDetail(_ repository: repositor)
+    func showRepositoryDetail(_ repository: RepositoryEntity)
 }
 
 final class RepositorySearchResultRouter {
@@ -37,5 +37,7 @@ final class RepositorySearchResultRouter {
 // Routerのprotocolに準拠する
 // 遷移する各画面ごとにメソッドを定義
 extension RepositorySearchResultRouter: RepositorySearchResultWireframe {
-    
+    func showRepositoryDetail(_ repository: RepositoryEntity) {
+        
+    }
 }

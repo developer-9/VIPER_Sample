@@ -27,6 +27,10 @@ final class AppRouter {
 
 extension AppRouter: AppWireframe {
     func showRepositorySearchResultView() {
-        let searchResultView = searchresult
+        let searchResultView = RepositorySearchResultRouter.assembleModules()
+        let navigationController = UINavigationController(rootViewController: searchResultView)
+        
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
     }
 }

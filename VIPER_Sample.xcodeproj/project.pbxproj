@@ -19,6 +19,7 @@
 		632320B127535DB6000B03FF /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632320B027535DB6000B03FF /* AppRouter.swift */; };
 		632320B327535E6D000B03FF /* AppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632320B227535E6D000B03FF /* AppPresenter.swift */; };
 		632320B527542E4D000B03FF /* RepositorySearchResultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632320B427542E4C000B03FF /* RepositorySearchResultRouter.swift */; };
+		63E56E16275C9708001BF2AF /* RepositorySearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E15275C9708001BF2AF /* RepositorySearchResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		632320B027535DB6000B03FF /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		632320B227535E6D000B03FF /* AppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPresenter.swift; sourceTree = "<group>"; };
 		632320B427542E4C000B03FF /* RepositorySearchResultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchResultRouter.swift; sourceTree = "<group>"; };
+		63E56E15275C9708001BF2AF /* RepositorySearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		632320AA27535C9A000B03FF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				63E56E15275C9708001BF2AF /* RepositorySearchResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				632320B127535DB6000B03FF /* AppRouter.swift in Sources */,
 				6323207327535BB5000B03FF /* ViewController.swift in Sources */,
 				6323206F27535BB5000B03FF /* AppDelegate.swift in Sources */,
+				63E56E16275C9708001BF2AF /* RepositorySearchResultViewController.swift in Sources */,
 				6323207127535BB5000B03FF /* SceneDelegate.swift in Sources */,
 				632320B527542E4D000B03FF /* RepositorySearchResultRouter.swift in Sources */,
 			);

@@ -27,3 +27,7 @@ final class RepositorySearchResultPresenter {
         self.searchRepositoryInteractor = searchRepositoryInteractor
     }
 }
+
+extension RepositorySearchResultPresenter: RepositorySearchResultPresentation {
+    
+}

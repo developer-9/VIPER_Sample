@@ -7,4 +7,9 @@
 
 import UIKit
 
-final class 
+final class RepositorySearchResultViewController: UITableViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

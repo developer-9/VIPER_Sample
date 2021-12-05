@@ -18,7 +18,11 @@ final class RepositorySearchResultRouter {
     
     // DI
     static func assembleModules() -> UIViewController {
-        let view = RepositorySearchResultRouter()
+        let view = RepositorySearchResultViewController()
+        let router = RepositorySearchResultRouter(viewController: view)
+        let searchRepositoryInteractor = SearchRepositoryInteractor()
+        // PresenterはView, Interactor, Routerそれぞれ必要なので生成initの引数で渡す
+        let presenter = RepositorySearchResultPresenter
         
     }
 }

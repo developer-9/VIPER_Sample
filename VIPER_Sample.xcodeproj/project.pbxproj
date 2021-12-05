@@ -23,6 +23,7 @@
 		63E56E19275C987F001BF2AF /* SearchRepositoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E18275C987F001BF2AF /* SearchRepositoryInteractor.swift */; };
 		63E56E1B275C9926001BF2AF /* RepositorySearchResultPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E1A275C9926001BF2AF /* RepositorySearchResultPresentation.swift */; };
 		63E56E1F275CB2A4001BF2AF /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E1E275CB2A4001BF2AF /* RepositoryEntity.swift */; };
+		63E56E21275CBC39001BF2AF /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E20275CBC39001BF2AF /* UserEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		63E56E18275C987F001BF2AF /* SearchRepositoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryInteractor.swift; sourceTree = "<group>"; };
 		63E56E1A275C9926001BF2AF /* RepositorySearchResultPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchResultPresentation.swift; sourceTree = "<group>"; };
 		63E56E1E275CB2A4001BF2AF /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
+		63E56E20275CBC39001BF2AF /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				63E56E1E275CB2A4001BF2AF /* RepositoryEntity.swift */,
+				63E56E20275CBC39001BF2AF /* UserEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E56E21275CBC39001BF2AF /* UserEntity.swift in Sources */,
 				632320B327535E6D000B03FF /* AppPresenter.swift in Sources */,
 				632320B127535DB6000B03FF /* AppRouter.swift in Sources */,
 				6323207327535BB5000B03FF /* ViewController.swift in Sources */,

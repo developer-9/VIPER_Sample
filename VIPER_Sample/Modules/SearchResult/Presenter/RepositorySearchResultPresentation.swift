@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol RepositorySearchResultPresentation: AnyObject {
+    
+}
+
 final class RepositorySearchResultPresenter {
     
     // View, Interactor, Routerへのアクセスはprotocolを介して行う

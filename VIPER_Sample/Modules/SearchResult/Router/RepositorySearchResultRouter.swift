@@ -24,7 +24,14 @@ final class RepositorySearchResultRouter {
         let router = RepositorySearchResultRouter(viewController: view)
         let searchRepositoryInteractor = SearchRepositoryInteractor()
         // PresenterはView, Interactor, Routerそれぞれ必要なので生成initの引数で渡す
-        let presenter = RepositorySearchResultPresenter
+        let presenter = RepositorySearchResultPresenter(view: view,
+                                                        router: router,
+                                                        searchRepositoryInteractor: searchRepositoryInteractor)
         
+        view.presenter = presenter
     }
+}
+
+extension RepositorySearchResultRouter: RepositorySearchResultWireframe {
+    
 }

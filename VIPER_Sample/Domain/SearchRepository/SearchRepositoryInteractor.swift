@@ -14,3 +14,7 @@ protocol SearchRepositoryUsecase: AnyObject {
 final class SearchRepositoryInteractor {
     
 }
+
+extension SearchRepositoryInteractor: SearchRepositoryUsecase {
+    
+}

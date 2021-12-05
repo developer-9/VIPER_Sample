@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol SearchRepositoryUsecase: AnyObject {
+    
+}
+
 final class SearchRepositoryInteractor {
     
 }

@@ -7,6 +7,9 @@
 
 import UIKit
 
+protocol RepositorySearchResultView: AnyObject {
+}
+
 final class RepositorySearchResultViewController: UITableViewController {
     
     override func viewDidLoad() {

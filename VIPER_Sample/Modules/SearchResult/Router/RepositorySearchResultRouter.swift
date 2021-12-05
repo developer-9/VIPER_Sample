@@ -7,6 +7,8 @@
 
 import UIKit
 
+protocol RepositorySearchResultWireframe: AnyObject {
+}
 
 final class RepositorySearchResultRouter {
     // 画面遷移のためにViewControllerが必要。initで受け取る

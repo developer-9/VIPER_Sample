@@ -8,7 +8,8 @@
 import Foundation
 
 protocol RepositorySearchResultPresentation: AnyObject {
-    
+    func searchButtonDidPush(searchText: String)
+    func didSelect(repository: RepositoryEntity)
 }
 
 final class RepositorySearchResultPresenter {
@@ -29,5 +30,11 @@ final class RepositorySearchResultPresenter {
 }
 
 extension RepositorySearchResultPresenter: RepositorySearchResultPresentation {
+    func searchButtonDidPush(searchText: String) {
+        
+    }
     
+    func didSelect(repository: RepositoryEntity) {
+        
+    }
 }

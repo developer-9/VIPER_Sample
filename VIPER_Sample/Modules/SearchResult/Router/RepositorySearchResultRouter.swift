@@ -38,6 +38,5 @@ final class RepositorySearchResultRouter {
 // 遷移する各画面ごとにメソッドを定義
 extension RepositorySearchResultRouter: RepositorySearchResultWireframe {
     func showRepositoryDetail(_ repository: RepositoryEntity) {
-        
     }
 }

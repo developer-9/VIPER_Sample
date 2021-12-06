@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6323206F27535BB5000B03FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323206E27535BB5000B03FF /* AppDelegate.swift */; };
 		6323207127535BB5000B03FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323207027535BB5000B03FF /* SceneDelegate.swift */; };
-		6323207327535BB5000B03FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323207227535BB5000B03FF /* ViewController.swift */; };
 		6323207627535BB5000B03FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6323207427535BB5000B03FF /* Main.storyboard */; };
 		6323207827535BBA000B03FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6323207727535BBA000B03FF /* Assets.xcassets */; };
 		6323207B27535BBA000B03FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6323207927535BBA000B03FF /* LaunchScreen.storyboard */; };
@@ -24,6 +23,7 @@
 		63E56E1B275C9926001BF2AF /* RepositorySearchResultPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E1A275C9926001BF2AF /* RepositorySearchResultPresentation.swift */; };
 		63E56E1F275CB2A4001BF2AF /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E1E275CB2A4001BF2AF /* RepositoryEntity.swift */; };
 		63E56E21275CBC39001BF2AF /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E20275CBC39001BF2AF /* UserEntity.swift */; };
+		63E56E25275E752B001BF2AF /* RepositoryDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E24275E752B001BF2AF /* RepositoryDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		6323206B27535BB5000B03FF /* VIPER_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6323206E27535BB5000B03FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6323207027535BB5000B03FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6323207227535BB5000B03FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6323207527535BB5000B03FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6323207727535BBA000B03FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6323207A27535BBA000B03FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		63E56E1A275C9926001BF2AF /* RepositorySearchResultPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchResultPresentation.swift; sourceTree = "<group>"; };
 		63E56E1E275CB2A4001BF2AF /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
 		63E56E20275CBC39001BF2AF /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		63E56E24275E752B001BF2AF /* RepositoryDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +121,8 @@
 				632320A727535C47000B03FF /* Infra */,
 				632320A827535C53000B03FF /* Extensions */,
 				632320A927535C59000B03FF /* Resources */,
-				6323206E27535BB5000B03FF /* AppDelegate.swift */,
 				6323207027535BB5000B03FF /* SceneDelegate.swift */,
-				6323207227535BB5000B03FF /* ViewController.swift */,
 				6323207427535BB5000B03FF /* Main.storyboard */,
-				6323207727535BBA000B03FF /* Assets.xcassets */,
 				6323207927535BBA000B03FF /* LaunchScreen.storyboard */,
 				6323207C27535BBA000B03FF /* Info.plist */,
 			);
@@ -160,6 +157,7 @@
 		6323209F27535BD9000B03FF /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				6323206E27535BB5000B03FF /* AppDelegate.swift */,
 				632320A027535BE3000B03FF /* Presenter */,
 				632320A127535BEA000B03FF /* Router */,
 			);
@@ -205,8 +203,9 @@
 		632320A427535C1B000B03FF /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				632320AC27535CB0000B03FF /* ViewControllers */,
+				63E56E23275E74FE001BF2AF /* Router */,
 				632320AD27535CB6000B03FF /* Views */,
+				632320AC27535CB0000B03FF /* Presenter */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -237,6 +236,7 @@
 		632320A927535C59000B03FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6323207727535BBA000B03FF /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -256,11 +256,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		632320AC27535CB0000B03FF /* ViewControllers */ = {
+		632320AC27535CB0000B03FF /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewControllers;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		632320AD27535CB6000B03FF /* Views */ = {
@@ -309,6 +309,14 @@
 				63E56E20275CBC39001BF2AF /* UserEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		63E56E23275E74FE001BF2AF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				63E56E24275E752B001BF2AF /* RepositoryDetailRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,9 +451,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E56E21275CBC39001BF2AF /* UserEntity.swift in Sources */,
+				63E56E25275E752B001BF2AF /* RepositoryDetailRouter.swift in Sources */,
 				632320B327535E6D000B03FF /* AppPresenter.swift in Sources */,
 				632320B127535DB6000B03FF /* AppRouter.swift in Sources */,
-				6323207327535BB5000B03FF /* ViewController.swift in Sources */,
 				6323206F27535BB5000B03FF /* AppDelegate.swift in Sources */,
 				63E56E16275C9708001BF2AF /* RepositorySearchResultViewController.swift in Sources */,
 				6323207127535BB5000B03FF /* SceneDelegate.swift in Sources */,

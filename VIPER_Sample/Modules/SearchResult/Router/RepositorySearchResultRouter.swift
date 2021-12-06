@@ -42,5 +42,6 @@ extension RepositorySearchResultRouter: RepositorySearchResultWireframe {
         let detailView = RepositoryDetailRouter.assembleModules(repository: repository)
         // 詳細画面に遷移
         // ここでinit時に受け取ったViewControllerを使う
+        viewController.navigationController?.pushViewController(detailView, animated: true)
     }
 }

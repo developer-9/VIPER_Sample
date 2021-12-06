@@ -38,5 +38,9 @@ final class RepositorySearchResultRouter {
 // 遷移する各画面ごとにメソッドを定義
 extension RepositorySearchResultRouter: RepositorySearchResultWireframe {
     func showRepositoryDetail(_ repository: RepositoryEntity) {
+        // 詳細画面のRouterに依存関係の解決を依頼
+        let detailView = RepositoryDetailRouter.assembleModules(repository: repository)
+        // 詳細画面に遷移
+        // ここでinit時に受け取ったViewControllerを使う
     }
 }

@@ -18,6 +18,5 @@ final class RepositoryDetailRouter {
     }
     
     static func assembleModules(repository: RepositoryEntity) -> UIViewController {
-        
     }
 }

@@ -36,7 +36,7 @@ final class RepositorySearchResultViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.titleView = searchBar
         clearsSelectionOnViewWillAppear = true
-        tableView.register(<#T##nib: UINib?##UINib?#>, forCellReuseIdentifier: <#T##String#>)
+        tableView.register(RepositoryCell.self)
     }
 }
 
@@ -61,6 +61,14 @@ extension RepositorySearchResultViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: RepositoryCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.setRepository(repositories[indexPath.row])
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Presenterにイベント通知
+        presenter.didSelect(repository: repositories[indexPath.row])
     }
 }
 

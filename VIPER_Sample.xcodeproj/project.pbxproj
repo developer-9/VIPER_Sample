@@ -25,6 +25,8 @@
 		63E56E21275CBC39001BF2AF /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E20275CBC39001BF2AF /* UserEntity.swift */; };
 		63E56E25275E752B001BF2AF /* RepositoryDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E24275E752B001BF2AF /* RepositoryDetailRouter.swift */; };
 		63E56E27275FA627001BF2AF /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E26275FA627001BF2AF /* RepositoryCell.swift */; };
+		63E56E29275FB22C001BF2AF /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E28275FB22C001BF2AF /* UITableViewCell+Extension.swift */; };
+		63E56E2B275FB358001BF2AF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E2A275FB358001BF2AF /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		63E56E20275CBC39001BF2AF /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		63E56E24275E752B001BF2AF /* RepositoryDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailRouter.swift; sourceTree = "<group>"; };
 		63E56E26275FA627001BF2AF /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		63E56E28275FB22C001BF2AF /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		63E56E2A275FB358001BF2AF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,8 @@
 		632320A827535C53000B03FF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				63E56E28275FB22C001BF2AF /* UITableViewCell+Extension.swift */,
+				63E56E2A275FB358001BF2AF /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -456,10 +462,12 @@
 				63E56E21275CBC39001BF2AF /* UserEntity.swift in Sources */,
 				63E56E25275E752B001BF2AF /* RepositoryDetailRouter.swift in Sources */,
 				632320B327535E6D000B03FF /* AppPresenter.swift in Sources */,
+				63E56E29275FB22C001BF2AF /* UITableViewCell+Extension.swift in Sources */,
 				63E56E27275FA627001BF2AF /* RepositoryCell.swift in Sources */,
 				632320B127535DB6000B03FF /* AppRouter.swift in Sources */,
 				6323206F27535BB5000B03FF /* AppDelegate.swift in Sources */,
 				63E56E16275C9708001BF2AF /* RepositorySearchResultViewController.swift in Sources */,
+				63E56E2B275FB358001BF2AF /* UIView+Extension.swift in Sources */,
 				6323207127535BB5000B03FF /* SceneDelegate.swift in Sources */,
 				63E56E1F275CB2A4001BF2AF /* RepositoryEntity.swift in Sources */,
 				632320B527542E4D000B03FF /* RepositorySearchResultRouter.swift in Sources */,

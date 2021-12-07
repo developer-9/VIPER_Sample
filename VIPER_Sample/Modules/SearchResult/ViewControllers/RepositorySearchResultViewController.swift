@@ -45,7 +45,12 @@ extension RepositorySearchResultViewController: RepositorySearchResultView {
     }
     
     func showErrorAlert() {
-        
+        let alert = UIAlertController(title: "ネットワークエラー", message: "しばらく時間を置いてから再度お試しください", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        DispatchQueue.main.async {
+            self.present(alert, animated: true)
+        }
     }
 }
 

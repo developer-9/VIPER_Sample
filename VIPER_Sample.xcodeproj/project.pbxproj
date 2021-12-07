@@ -27,6 +27,7 @@
 		63E56E27275FA627001BF2AF /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E26275FA627001BF2AF /* RepositoryCell.swift */; };
 		63E56E29275FB22C001BF2AF /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E28275FB22C001BF2AF /* UITableViewCell+Extension.swift */; };
 		63E56E2B275FB358001BF2AF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E2A275FB358001BF2AF /* UIView+Extension.swift */; };
+		63E56E2D275FFC53001BF2AF /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E56E2C275FFC53001BF2AF /* RepositoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		63E56E26275FA627001BF2AF /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
 		63E56E28275FB22C001BF2AF /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		63E56E2A275FB358001BF2AF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		63E56E2C275FFC53001BF2AF /* RepositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				63E56E26275FA627001BF2AF /* RepositoryCell.swift */,
+				63E56E2C275FFC53001BF2AF /* RepositoryCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				6323207B27535BBA000B03FF /* LaunchScreen.storyboard in Resources */,
 				6323207827535BBA000B03FF /* Assets.xcassets in Resources */,
 				6323207627535BB5000B03FF /* Main.storyboard in Resources */,
+				63E56E2D275FFC53001BF2AF /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,11 +41,11 @@ final class RepositorySearchResultViewController: UITableViewController {
 
 extension RepositorySearchResultViewController: RepositorySearchResultView {
     func updateRepositories(_ repositories: [RepositoryEntity]) {
-        <#code#>
+        self.repositories = repositories
     }
     
     func showErrorAlert() {
-        <#code#>
+        
     }
 }
 

@@ -36,6 +36,7 @@ final class RepositorySearchResultViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.titleView = searchBar
         clearsSelectionOnViewWillAppear = true
+        tableView.register(<#T##nib: UINib?##UINib?#>, forCellReuseIdentifier: <#T##String#>)
     }
 }
 

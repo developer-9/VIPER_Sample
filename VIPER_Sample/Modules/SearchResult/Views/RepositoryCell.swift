@@ -7,6 +7,13 @@
 
 import UIKit
 
-class RepositoryCell: UITableViewCell {
+class RepositoryCell: UITableViewCell, NibRegistrable {
     
+    @IBOutlet private weak var repositoriesNameLabel: UILabel!
+    @IBOutlet private weak var starCountLabel: UILabel!
+    
+    func setRepository(_ repository: RepositoryEntity) {
+        repositoriesNameLabel.text = repository.fullname
+        starCountLabel.text = "\(repository.starCount)"
+    }
 }

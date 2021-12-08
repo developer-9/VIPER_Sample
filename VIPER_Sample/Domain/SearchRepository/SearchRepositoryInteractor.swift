@@ -8,13 +8,16 @@
 import Foundation
 
 protocol SearchRepositoryUsecase: AnyObject {
-    
+    func fetchRepositories(keyword: String, completion: @escaping(Result<[RepositoryEntity], Error) -> Void)
 }
 
 final class SearchRepositoryInteractor {
-    
+    // GitHubにアクセスするためのAPIクライアント
+    // テスト時にAPIクライアントをMockに差し替えてレスポンスを返すようにする
 }
 
 extension SearchRepositoryInteractor: SearchRepositoryUsecase {
-    
+    func fetchRepositories(keyword: String, completion: ()) {
+        
+    }
 }

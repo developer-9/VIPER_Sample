@@ -31,10 +31,20 @@ final class RepositorySearchResultPresenter {
 
 extension RepositorySearchResultPresenter: RepositorySearchResultPresentation {
     func searchButtonDidPush(searchText: String) {
-        
+        guard !searchText.isEmpty else { return }
+        // Interactorにデータ取得処理を依頼
+        searchRepositoryInteractor.fetchRepositories(keyword: searchText) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let repositories):
+                self.view?.updateRepositories(repositories)
+            case .failure(_):
+                self.view?.showErrorAlert()
+            }
+        }
     }
     
     func didSelect(repository: RepositoryEntity) {
-        
+        router.showRepositoryDetail(repository)
     }
 }

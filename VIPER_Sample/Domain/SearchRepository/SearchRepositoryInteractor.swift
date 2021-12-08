@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SearchRepositoryUsecase: AnyObject {
-    func fetchRepositories(keyword: String, completion: @escaping(Result<[RepositoryEntity], Error) -> Void)
+    func fetchRepositories(keyword: String, completion: @escaping(Result<[RepositoryEntity], Error>) -> Void)
 }
 
 final class SearchRepositoryInteractor {
@@ -17,7 +17,7 @@ final class SearchRepositoryInteractor {
 }
 
 extension SearchRepositoryInteractor: SearchRepositoryUsecase {
-    func fetchRepositories(keyword: String, completion: ()) {
-        
+    func fetchRepositories(keyword: String, completion: @escaping (Result<[RepositoryEntity], Error>) -> Void) {
+        <#code#>
     }
 }

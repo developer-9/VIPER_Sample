@@ -52,6 +52,6 @@ extension GitHubRequest {
 final class GitHubAPI {
     
     struct SearchRepositories: GitHubRequest {
-        
+        typealias Response = 
     }
 }

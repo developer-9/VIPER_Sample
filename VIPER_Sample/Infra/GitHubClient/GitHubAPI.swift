@@ -52,6 +52,40 @@ extension GitHubRequest {
 final class GitHubAPI {
     
     struct SearchRepositories: GitHubRequest {
-        typealias Response = 
+        
+        typealias Response = SearchResponseEntity<RepositoryEntity>
+        
+        let keyword: String
+        
+        var method: HTTPMethod {
+            return .get
+        }
+        
+        var path: String {
+            return "/search/repositories"
+        }
+        
+        var queryItems: [URLQueryItem] {
+            return [URLQueryItem(name: "q", value: keyword)]
+        }
+    }
+    
+    struct SearchUsers: GitHubRequest {
+        
+        typealias Response = SearchResponseEntity<UserEntity>
+        
+        let keyword: String
+        
+        var method: HTTPMethod {
+            return .get
+        }
+        
+        var path: String {
+            return "/search/users"
+        }
+        
+        var queryItems: [URLQueryItem] {
+            return [URLQueryItem(name: "q", value: keyword)]
+        }
     }
 }

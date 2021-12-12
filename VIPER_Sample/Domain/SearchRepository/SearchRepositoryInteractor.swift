@@ -21,8 +21,12 @@ final class SearchRepositoryInteractor {
     }
 }
 
+// Interactorのプロトコルに準拠する
 extension SearchRepositoryInteractor: SearchRepositoryUsecase {
     func fetchRepositories(keyword: String, completion: @escaping (Result<[RepositoryEntity], Error>) -> Void) {
-         
+        let request = GitHubAPI.SearchRepositories(keyword: keyword)
+        client.send(request: request) { result in
+            completion(result.map { $0.items })
+        }
     }
 }

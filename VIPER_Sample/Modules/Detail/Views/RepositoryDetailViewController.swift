@@ -16,3 +16,7 @@ final class RepositoryDetailViewController: UIViewController {
     
     var presenter: RepositoryDetailViewPresentation!
 }
+
+extension RepositoryDetailViewController: RepositoryDetailView {
+    
+}

@@ -29,5 +29,20 @@ class VIPER_SampleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    // MARK: - Mock
+    class ViewMock: RepositorySearchResultView {
+        var callCount_setLastSearchText = 0
+        func setLastSearchText(_ text: String) {
+            callCount_setLastSearchText += 1
+        }
+        
+        func updateRepositories(_ repositories: [RepositoryEntity]) {
+            <#code#>
+        }
+        
+        func showErrorAlert() {
+            <#code#>
+        }
+    }
 }

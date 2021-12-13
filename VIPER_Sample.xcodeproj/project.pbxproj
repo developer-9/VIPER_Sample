@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6323206F27535BB5000B03FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323206E27535BB5000B03FF /* AppDelegate.swift */; };
 		6323207127535BB5000B03FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323207027535BB5000B03FF /* SceneDelegate.swift */; };
-		6323207627535BB5000B03FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6323207427535BB5000B03FF /* Main.storyboard */; };
 		6323207827535BBA000B03FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6323207727535BBA000B03FF /* Assets.xcassets */; };
 		6323207B27535BBA000B03FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6323207927535BBA000B03FF /* LaunchScreen.storyboard */; };
 		6323208627535BBB000B03FF /* VIPER_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323208527535BBB000B03FF /* VIPER_SampleTests.swift */; };
@@ -23,6 +22,7 @@
 		638575542762C0FF00B50D64 /* SearchResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638575532762C0FF00B50D64 /* SearchResponseEntity.swift */; };
 		638575D9276640C500B50D64 /* RepositoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638575D8276640C500B50D64 /* RepositoryDetailViewController.swift */; };
 		638575DB2766AEE000B50D64 /* RepositoryDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638575DA2766AEE000B50D64 /* RepositoryDetailViewPresenter.swift */; };
+		638575DD2766C4D900B50D64 /* RepositoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638575DC2766C4D900B50D64 /* RepositoryDetailViewController.xib */; };
 		63E56E16275C9708001BF2AF /* RepositorySearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E15275C9708001BF2AF /* RepositorySearchResultViewController.swift */; };
 		63E56E19275C987F001BF2AF /* SearchRepositoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E18275C987F001BF2AF /* SearchRepositoryInteractor.swift */; };
 		63E56E1B275C9926001BF2AF /* RepositorySearchResultPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E56E1A275C9926001BF2AF /* RepositorySearchResultPresentation.swift */; };
@@ -57,10 +57,8 @@
 		6323206B27535BB5000B03FF /* VIPER_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6323206E27535BB5000B03FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6323207027535BB5000B03FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6323207527535BB5000B03FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6323207727535BBA000B03FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6323207A27535BBA000B03FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6323207C27535BBA000B03FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6323208127535BBB000B03FF /* VIPER_SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6323208527535BBB000B03FF /* VIPER_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_SampleTests.swift; sourceTree = "<group>"; };
 		6323208B27535BBB000B03FF /* VIPER_SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +72,7 @@
 		638575532762C0FF00B50D64 /* SearchResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseEntity.swift; sourceTree = "<group>"; };
 		638575D8276640C500B50D64 /* RepositoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewController.swift; sourceTree = "<group>"; };
 		638575DA2766AEE000B50D64 /* RepositoryDetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewPresenter.swift; sourceTree = "<group>"; };
+		638575DC2766C4D900B50D64 /* RepositoryDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryDetailViewController.xib; sourceTree = "<group>"; };
 		63E56E15275C9708001BF2AF /* RepositorySearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchResultViewController.swift; sourceTree = "<group>"; };
 		63E56E18275C987F001BF2AF /* SearchRepositoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryInteractor.swift; sourceTree = "<group>"; };
 		63E56E1A275C9926001BF2AF /* RepositorySearchResultPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchResultPresentation.swift; sourceTree = "<group>"; };
@@ -142,9 +141,7 @@
 				632320A827535C53000B03FF /* Extensions */,
 				632320A927535C59000B03FF /* Resources */,
 				6323207027535BB5000B03FF /* SceneDelegate.swift */,
-				6323207427535BB5000B03FF /* Main.storyboard */,
 				6323207927535BBA000B03FF /* LaunchScreen.storyboard */,
-				6323207C27535BBA000B03FF /* Info.plist */,
 			);
 			path = VIPER_Sample;
 			sourceTree = "<group>";
@@ -293,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				638575D8276640C500B50D64 /* RepositoryDetailViewController.swift */,
+				638575DC2766C4D900B50D64 /* RepositoryDetailViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -453,9 +451,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638575DD2766C4D900B50D64 /* RepositoryDetailViewController.xib in Resources */,
 				6323207B27535BBA000B03FF /* LaunchScreen.storyboard in Resources */,
 				6323207827535BBA000B03FF /* Assets.xcassets in Resources */,
-				6323207627535BB5000B03FF /* Main.storyboard in Resources */,
 				63E56E2D275FFC53001BF2AF /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,14 +535,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6323207427535BB5000B03FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6323207527535BB5000B03FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6323207927535BBA000B03FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

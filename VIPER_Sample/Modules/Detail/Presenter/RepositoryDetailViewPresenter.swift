@@ -26,6 +26,6 @@ final class RepositoryDetailViewPresenter {
 
 extension RepositoryDetailViewPresenter: RepositoryDetailViewPresentation {
     func viewDidLoad() {
-        view.load
+        view?.load(request: URLRequest(url: repository.htmlUrl))
     }
 }

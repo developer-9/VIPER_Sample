@@ -9,14 +9,23 @@ import UIKit
 import WebKit
 
 protocol RepositoryDetailView: AnyObject {
-    
+    func load(request urlRequest: URLRequest)
 }
 
 final class RepositoryDetailViewController: UIViewController {
     
     var presenter: RepositoryDetailViewPresentation!
+    
+    @IBOutlet private weak var webView: WKWebView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter.viewDidLoad()
+    }
 }
 
 extension RepositoryDetailViewController: RepositoryDetailView {
-    
+    func load(request urlRequest: URLRequest) {
+        webView.load(urlRequest)
+    }
 }

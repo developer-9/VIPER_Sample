@@ -33,7 +33,9 @@ class VIPER_SampleTests: XCTestCase {
         }
     }
     
-    
+    func testSearchButtonDidPush() {
+        
+    }
     
     // MARK: - Mock
     

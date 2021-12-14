@@ -8,6 +8,6 @@
 import Foundation
 
 struct UserEntity: Decodable {
-    let id: String
+    let id: Int
     let login: String
 }
